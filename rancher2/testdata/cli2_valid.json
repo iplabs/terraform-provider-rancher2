@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "rancherDefault": {
+      "accessKey": "token-abcde",
+      "secretKey": "xlj5sjt4c5hdctwcdnpfmx9g8fdd29q5w2ng96qt9v62fzgqc7wphj",
+      "tokenKey": "token-abcde:xlj5sjt4c5hdctwcdnpfmx9g8fdd29q5w2ng96qt9v62fzgqc7wphj",
+      "url": "https://rancher.example.com",
+      "project": "c-11ds2:p-abcde",
+      "cacert": ""
+    }
+  },
+  "CurrentServer": "rancherDefault"
+}

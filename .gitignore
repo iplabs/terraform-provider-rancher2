@@ -1,0 +1,24 @@
+# Go dependencies
+/vendor/
+
+# Binaries
+/.bin/
+
+# Test results ans static code analysis
+/.sonarlint/
+/.scannerwork/
+/*.out
+
+# Log files
+*.log
+
+
+# Terraform tests
+/*.tf
+.terraform/
+*.tfstate*
+/terraform-provider-rancher2
+
+# IntelliJ IDEA configuration
+/.idea/
+*.iml

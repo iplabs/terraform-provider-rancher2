@@ -1,0 +1,35 @@
+dist: trusty
+sudo: false
+
+language: go
+
+go:
+- "1.11.x"
+
+env:
+- GO111MODULE=on
+
+install: true
+
+addons:
+  sonarcloud:
+    organization: "iplabs"
+
+#before_install:
+#- sudo apt-get -qq update
+#- sudo apt-get install -y jq
+
+cache:
+  directories:
+  - '$HOME/.sonar/cache'
+  - '$GOPATH/src'
+
+jobs:
+  include:
+  - stage: Build & Test
+    script: make build && make test && make sonar
+  - stage: Dist
+    script: make dist
+
+matrix:
+  fast_finish: true
