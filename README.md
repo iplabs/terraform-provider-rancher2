@@ -1,3 +1,7 @@
+**DEPRECATED**
+There is an official Terraform provider plugin which is maintained by Rancher Labs. Therefore, this project will no longer be carried on. &rarr;&nbsp;https://github.com/rancher/terraform-provider-rancher2 
+
+
 # Terraform Provider
 
 
